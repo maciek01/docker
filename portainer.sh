@@ -5,6 +5,7 @@ docker run --name pi-portainer --restart always -d -p 9000:9000 -v /var/run/dock
 
 
 docker restart pi-postgres
+#docker pull postgres
 
 docker run --name pi-postgres --restart always -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=pi -d -p 5432:5432 postgres
 
