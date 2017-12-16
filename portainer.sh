@@ -2,8 +2,8 @@
 # curl -sSL https://get.docker.com | sh
 
 # optional:
-# usermod -a -G docker pi
-
+# sudo groupadd docker
+# sudo usermod -aG docker $USER
 
 
 docker restart pi-portainer
